@@ -70,14 +70,14 @@ A minimum of two arguments must be provided. Otherwise, a TypeError is raised.
 
     >>> print(matrix_mul()) # doctest: +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
-    TypeError: matrix_mul() missing 2 required positional arguments: 
+    TypeError: matrix_mul() missing 2 required positional arguments:
     'm_a' and 'm_b'
 
 ::
 
     >>> print(matrix_mul()) # doctest: +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
-    TypeError: matrix_mul() missing 2 required positional arguments: 
+    TypeError: matrix_mul() missing 2 required positional arguments:
     'm_a' and 'm_b'
 
 ValueErrors
@@ -235,4 +235,3 @@ equivalent. Otherwise, a TypeError is raised.
     >>> print(matrix_mul(m_a, m_b))
     Traceback (most recent call last):
     TypeError: each row of m_a must should be of the same size
-
