@@ -6,15 +6,15 @@ def matrix_mul(m_a, m_b):
     """Multiply two matrices.
 
     Args:
-        m_a (list of lists of ints/floats): The first matrix.
-        m_b (list of lists of ints/floats): The second matrix.
+        The resulting matrix is obtained by multiplying the first matrix, m_a, with the second matrix.
+        The resulting matrix is obtained by multiplying the first matrix, m_a, with the second matrix, m_b.
     Raises:
         TypeError: If either m_a or m_b is not a list of lists of ints/floats.
         TypeError: If either m_a or m_b is empty.
         TypeError: If either m_a or m_b has different-sized rows.
         ValueError: If m_a and m_b cannot be multiplied.
     Returns:
-        A new matrix representing the multiplication of m_a by m_b.
+        A new matrix is obtained by multiplying m_a with m_b.
     """
 
     if m_a == [] or m_a == [[]]:
@@ -55,13 +55,13 @@ def matrix_mul(m_a, m_b):
         inverted_b.append(new_row)
 
     new_matrix = []
-    for row in m_a:
-        new_row = []
-        for col in inverted_b:
-            prod = 0
-            for i in range(len(inverted_b[0])):
-                prod += row[i] * col[i]
-            new_row.append(prod)
-        new_matrix.append(new_row)
+   for row in m_a:
+       new_row = []
+       for col in inverted_b:
+           prod = 0
+           for m in range(len(inverted_b[0])):
+               prod += row[m] * col[m]
+           new_row.append(prod)
+       new_matrix.append(new_row)
 
-    return new_matrix
+   return new_matrix
